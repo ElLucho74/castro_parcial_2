@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de RIO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculadora-container">
+        <h2>Calculadora de RIO</h2>
+        <label for="ganancia_neta">Ganancia Neta:</label>
+        <input type="number" id="ganancia_neta" placeholder="Ganancia neta">
+        
+        <label for="inversion_total">Inversión Total:</label>
+        <input type="number" id="inversion_total" placeholder="Inversión total">
+        
+        <button onclick="calcularROI()">Calcular RIO</button>
+        
+        <div id="resultado" class="resultado"></div>
+        <hr>
+        <button onclick="regresar()">Regresar</button>
+
+    </div>
+    <script src="rio.js"></script>
+    <script>
+        function regresar() {
+            window.location.href = 'calculadoras.html';
+        }
+    </script>
+</body>
+</html>

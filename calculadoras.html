@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculadora-container">
+        <h2>Calculadoras</h2>
+        <button onclick="openCalculator('efectividad_cotidiana.html')">Efectividad Cotidiana</button>
+        <br>
+        <button onclick="openCalculator('efectividad_empresarial.html')">Efectividad Empresarial</button>
+        <br>
+        <button onclick="openCalculator('efectividad_eficiencia_eficacia.html')">Efectividad, Eficiencia y Eficacia</button>
+        <br>
+        <button onclick="openCalculator('rio.html')">RIO</button>
+        <br>
+        <hr>
+        <button onclick="regresar()">Regresar</button>
+
+    </div>
+    <script>
+        function openCalculator(calculator) {
+            window.location.href = calculator;
+        }
+        function regresar() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
