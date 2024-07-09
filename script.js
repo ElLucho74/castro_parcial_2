@@ -7,7 +7,7 @@ function login() {
     const messageElement = document.getElementById("message");
 
     if (username === storedUsername && password === storedPassword) {
-        window.location.href = "calculadoras.html";
+        window.location.href = "curris.html";
     } else {
         messageElement.textContent = "Inicio de sesión fallido";
         messageElement.style.color = "red";
